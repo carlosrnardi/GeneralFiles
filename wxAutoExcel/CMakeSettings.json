@@ -1,0 +1,96 @@
+{
+  "configurations": [
+    {
+      "name": "x86",
+      "generator": "Ninja",
+      "configurationType": "Release",
+      "inheritEnvironments": [ "msvc_x86" ],
+      "buildRoot": "${projectDir}\\out\\build\\${name}",
+      "installRoot": "${projectDir}\\out\\install\\${name}",
+      "cmakeCommandArgs": "",
+      "buildCommandArgs": "",
+      "ctestCommandArgs": "",
+      "variables": [
+        {
+          "name": "wxAutoExcel_BUILD_BUILD_SAMPLES",
+          "value": "False",
+          "type": "BOOL"
+        },
+        {
+          "name": "wxWidgets_USE_REL_AND_DBG",
+          "value": "true",
+          "type": "BOOL"
+        }
+      ]
+    },
+    {
+      "name": "x86-Debug",
+      "generator": "Ninja",
+      "configurationType": "Debug",
+      "inheritEnvironments": [ "msvc_x86" ],
+      "buildRoot": "${projectDir}\\out\\build\\${name}",
+      "installRoot": "${projectDir}\\out\\install\\${name}",
+      "cmakeCommandArgs": "",
+      "buildCommandArgs": "",
+      "ctestCommandArgs": "",
+      "variables": [
+        {
+          "name": "wxAutoExcel_BUILD_BUILD_SAMPLES",
+          "value": "False",
+          "type": "BOOL"
+        },
+        {
+          "name": "wxWidgets_USE_REL_AND_DBG",
+          "value": "true",
+          "type": "BOOL"
+        }
+      ]
+    },
+    {
+      "name": "x64",
+      "generator": "Ninja",
+      "configurationType": "Release",
+      "inheritEnvironments": [ "msvc_x64_x64" ],
+      "buildRoot": "${projectDir}\\out\\build\\${name}",
+      "installRoot": "${projectDir}\\out\\install\\${name}",
+      "cmakeCommandArgs": "",
+      "buildCommandArgs": "",
+      "ctestCommandArgs": "",
+      "variables": [
+        {
+          "name": "wxAutoExcel_BUILD_BUILD_SAMPLES",
+          "value": "False",
+          "type": "BOOL"
+        },
+        {
+          "name": "wxWidgets_USE_REL_AND_DBG",
+          "value": "true",
+          "type": "BOOL"
+        }
+      ]
+    },
+    {
+      "name": "x64-Debug",
+      "generator": "Ninja",
+      "configurationType": "Debug",
+      "inheritEnvironments": [ "msvc_x64_x64" ],
+      "buildRoot": "${projectDir}\\out\\build\\${name}",
+      "installRoot": "${projectDir}\\out\\install\\${name}",
+      "cmakeCommandArgs": "",
+      "buildCommandArgs": "",
+      "ctestCommandArgs": "",
+      "variables": [
+        {
+          "name": "wxAutoExcel_BUILD_BUILD_SAMPLES",
+          "value": "False",
+          "type": "BOOL"
+        },
+        {
+          "name": "wxWidgets_USE_REL_AND_DBG",
+          "value": "true",
+          "type": "BOOL"
+        }
+      ]
+    }
+  ]
+}
